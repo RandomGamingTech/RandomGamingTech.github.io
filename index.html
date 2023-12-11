@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta character="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa&family=Play&display=swap" rel="stylesheet">
+    <title>survey-form</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">¿Te gusta jugar League of Legends?</h1>
+        <div class="divider"></div>
+        <img src="https://github.com/RandomGamingTech/Img-logos/blob/master/league_of_legends_wallpaper__hd__by_muamerart_d7a94xg-pre.jpg?raw=true"
+            class="header-img">
+    </header>
+    <p id="description" class="describir">Gracias por tomarte tu tiempo para responder a estas preguntas. <br>Esta encuesta tiene como
+        finalidad obtener datos acerca de tus experiencias en League of Legends.</p>
+    <form id="survey-form" method="post">
+        <fieldset>
+            <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name"
+                    required /></label>
+            <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email"
+                    required /></label>
+            <label id="number-label" for"age">Age (optional) <input id="number" type="number" min="12" max="120"
+                    placeholder="Age "><label>
+        </fieldset>
+        <fieldset>
+            <label>¿Por qué comenzaste a jugar League of Legends?
+                <select id="dropdown" required>
+                    <option value="">(Select one)</option>
+                    <option value="1">Un amigo me contó acerca del juego</option>
+                    <option value="2">Iniciativa propia</option>
+                    <option value="3">Viendo contenido (streamers, Youtube, Facebook, etc.)</option>
+                    <option value="4">Otro</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="RADIO">
+            <legend>¿Disfrutas jugar League of Legends?</legend>
+            <input type="radio" id="me-encanta" name="radio" class="radiob" value="me-encanta" checked /><label
+                class="L-R" for="me-encanta">Me encanta jugar, lo paso bomba.</label>
+            <input type="radio" id="mas-o-menos" name="radio" class="radiob" value="mas-o-menos"><label class="L-R"
+                for="mas-o-menos">Lo juego, pero no es mi favorito.</label>
+            <input type="radio" id="computador" name="radio" class="radiob" value="computador"><label class="L-R"
+                for="computador">Solo lo juego porque mi PC no corre otros juegos.</label>
+            <input type="radio" id="lo-odio-positivamente" name="radio" class="radiob"
+                value="lo-odio-positivamente"><label class="L-R" for="lo-odio-positivamente">Lo odio, pero igual lo
+                juego.</label>
+            <input type="radio" id="no-lo-juego" name="radio" class="radiob" value="no-lo-juego"><label class="L-R"
+                for="no-lo-juego">Antes me gustaba, ahora ya no.</label>
+        </fieldset>
+        <fieldset class="questions">
+            <legend>¿Qué mejorarías, si pudieras, de League of Legends?</legend>
+            <label id="instructions-checkbox"><span class="instrucccion">Selecciona una o más opciones:</span></label>
+            <input type="checkbox" id="mejorar-comunidad" name="comunity"
+                    value="comunidad" class="inline" required /><label class="L-C" for="mejorar-comunidad">La comunidad.</label>
+            <input type="checkbox" id="mejorar-clasificatorias"
+                    value="clasificatorias" name="rank-system" class="inline"><label class="L-C" for="mejorar-clasificatorias">El sistema de clasificatorias.</label>
+            <input type="checkbox" id="mejorar-errores" value="los-errores" name="bugs"
+                    class="inline"><label class="L-C" for="mejorar-errores">Los errores dentro del juego.</label>
+            <input type="checkbox" id="mejorar-cliente" value="errores-cliente"
+                    name="client-issues" class="inline"><label class="L-C" for="mejorar-cliente">Los errores del cliente (launcher).</label>
+            <label><strong>Si tu sugerencia no aparece listada, o no satisface por completo tus ideas, favor de
+                    especificar:</strong></label>
+            <textarea id="sugerencia" rows="5" cols="60" placeholder="Escribe aquí tu propia sugerencia..."></textarea>
+        </fieldset>
+        <div class="end">
+        <input class="C-D" type="checkbox" id="uso-datos" value="uso-datos" name="fines-informativos"
+                required name="uso-informacion" class="inline"><label class="L-D" for="uso-datos">Acepto que mis datos sean usados con fines
+            informativos.</label>
+        <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+</body>
