@@ -10,6 +10,7 @@ body {
     color: white;
     font-family: Changa;
     font-size: 18px;
+    overflow: hidden;
 }
 
 .header {
