@@ -44,6 +44,7 @@ body {
 label {
     display: block;
     margin: 0.5rem 0;
+    cursor: pointer;
 }
 
 form {
@@ -60,6 +61,10 @@ select {
     width: 100%;
     min-height: 2.3em;
     border-radius: 7px 6px;
+}
+
+select {
+    cursor: pointer;
 }
 
 .RADIO {
